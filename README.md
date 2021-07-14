@@ -20,8 +20,8 @@
   * follow the installation instructions on [Hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
   * kubectl will be automaticaly configured
   * minikube addons enable ingress
-4. Python 3
-* install python depending on OS (install python3.9)
+4. Python 3.6
+* install python3.6 or later version, depending on OS
 * in Python terminal run: pip install requests datetime
 
 -----------------------------------------------------------
