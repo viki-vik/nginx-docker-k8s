@@ -21,8 +21,8 @@
   * kubectl will be automaticaly configured
   * minikube addons enable ingress
 4. Python 3
-* install python3.9
-* pip install requests datetime
+* install python depending on OS (install python3.9)
+* in Python terminal run: pip install requests datetime
 
 -----------------------------------------------------------
 ## How to use this project:
