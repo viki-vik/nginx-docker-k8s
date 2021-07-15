@@ -33,9 +33,9 @@
 * run k8s service: **kubectl apply -f deployment.yaml**
 * open minikube dashboard to check the pod
 * test the container runnig:
- * with python script:**run test_container/main.py**
- * OR with the following bash commands: 
- * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
- * **curl http://172.17.0.2:8080 **
+  * with python script:**run test_container/main.py**
+  * OR with the following bash commands: 
+  * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
+  * **curl http://172.17.0.2:8080 **
 
 
