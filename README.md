@@ -36,7 +36,7 @@
   * with python script:**run test_container/main.py**
   * OR with the following bash commands: 
   * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
-  * **curl http://172.17.0.2:8080 **
+  * **curl** http://172.17.0.2:8080
 
 
 ### SPECIAL THANKS: 
