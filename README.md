@@ -38,6 +38,6 @@
   * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
   * **curl** http://172.17.0.2:8080
 
-
+-----------------------------------------------------------
 ### SPECIAL THANKS: 
 Dockerfile for unprivileged user and shell scripts were taken from [here](https://github.com/nginxinc/docker-nginx-unprivileged/tree/main/stable/alpine)
