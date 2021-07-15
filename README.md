@@ -39,3 +39,5 @@
   * **curl http://172.17.0.2:8080 **
 
 
+### SPECIAL THANKS: 
+Dockerfile for unprivileged and shell scripts user were taken from [here](https://github.com/nginxinc/docker-nginx-unprivileged/tree/main/stable/alpine)
