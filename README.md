@@ -40,4 +40,4 @@
 
 
 ### SPECIAL THANKS: 
-Dockerfile for unprivileged and shell scripts user were taken from [here](https://github.com/nginxinc/docker-nginx-unprivileged/tree/main/stable/alpine)
+Dockerfile for unprivileged user and shell scripts were taken from [here](https://github.com/nginxinc/docker-nginx-unprivileged/tree/main/stable/alpine)
