@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: alpinex-container
-        image: viki-vik/nginx-alpine:1.0
+        image: vik/alpine_nginx:1.0
         ports:
         - containerPort: 8080
