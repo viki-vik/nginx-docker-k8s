@@ -11,4 +11,4 @@
 import py_html_test
 
 if __name__ == '__main__':
-    py_html_test.test_response("http://172.17.0.2")
+    py_html_test.test_response("http://172.17.0.2:8080")
