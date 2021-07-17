@@ -32,6 +32,7 @@
 * Create and run container on k8s:
   * run k8s deployment: **kubectl apply -f deployment.yaml**
   * run k8s service: **kubectl apply -f service.yaml**
+  * run k8s service: **kubectl apply -f ingress.yaml**
 * open minikube dashboard to check the pod: 
   * open new terminal and run this command: **minikube dashboard**
   * run in terminal: **kubectl get pods / && kubectl get svc**
