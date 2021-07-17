@@ -29,9 +29,10 @@
 * clone this project
 * build the docker image:
   **docker build -t vik/alpine_nginx:1.0 .**
-* deploy the image to k8s
 * run k8s service: **kubectl apply -f deployment.yaml**
-* open minikube dashboard to check the pod
+* open minikube dashboard to check the pod: 
+  * open new terminal and run this command: **minikube dashboard**
+  * OR check in terminal: **kubectl get pods**
 * test the container runnig:
   * with python script:**run test_container/main.py**
   * OR with the following bash commands: 
