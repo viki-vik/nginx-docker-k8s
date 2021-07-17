@@ -29,11 +29,13 @@
 * clone this project
 * build the docker image:
   **docker build -t vik/alpine_nginx:1.0 .**
-* run k8s service: **kubectl apply -f deployment.yaml**
+* Create and run container on k8s:
+  * run k8s deployment: **kubectl apply -f deployment.yaml**
+  * run k8s service: **kubectl apply -f service.yaml**
 * open minikube dashboard to check the pod: 
   * open new terminal and run this command: **minikube dashboard**
-  * OR check in terminal: **kubectl get pods**
-* test the container runnig:
+  * run in terminal: **kubectl get pods / && kubectl get svc**
+* test js application runnig:
   * with python script:**run test_container/main.py**
   * OR with the following bash commands: 
   * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
