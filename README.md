@@ -17,7 +17,7 @@
 3. Minikube
 * use for testing [playground to learn Kubernetes](https://labs.play-with-k8s.com/)
 * OR install minikube
-  * follow the installation instructions on [Hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
+  * follow the installation instructions on [Install Minikube](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-minikube/)
   * kubectl will be automaticaly configured
   * minikube addons enable ingress
 4. Python 3.6
@@ -26,7 +26,7 @@
 
 -----------------------------------------------------------
 ## How to use this project:
-* clone the project from the repository
+* clone this project
 * build the docker image:
   **docker build -t vik/alpine_nginx:1.0 .**
 * deploy the image to k8s
