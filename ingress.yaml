@@ -1,5 +1,5 @@
-apiVersion: extensions/
-kind: ingress
+apiVersion: extensions/v1beta
+kind: Ingress
 metadata:
   name: web
   namespace: default
