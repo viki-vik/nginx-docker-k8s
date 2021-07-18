@@ -27,9 +27,8 @@
 -----------------------------------------------------------
 ## How to use this project:
 * clone this project
-* build the docker image:
-  **docker build -t vik/alpine_nginx:1.0 .**
-* Create and run container on k8s:
+* run minikube: **minikube start driver=docker**
+* create and run container on k8s:
   * run k8s deployment: **kubectl apply -f deployment.yaml**
   * run k8s service: **kubectl apply -f service.yaml**
   * run k8s service: **kubectl apply -f ingress.yaml**
