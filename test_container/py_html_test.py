@@ -2,8 +2,13 @@ import requests
 from datetime import date
 
 
-# def get_url():
-#     return url
+def get_container_ip():
+    container_ip = input('Please insert Container IP: ')
+    return container_ip
+
+def get_port():
+    port = input('Please insert port: ')
+    return port
 
 # def test_date():
 #     return

@@ -11,4 +11,18 @@
 import py_html_test
 
 if __name__ == '__main__':
-    py_html_test.test_response("http://172.17.0.2:8080")
+    while True:
+        try:
+            container_ip = py_html_test.get_container_ip()
+        except ValueError:
+            print('Error!!! Please insert Container IP in a valid format!!! Try again')
+        break
+    while True:
+        try:
+            port = str(py_html_test.get_port())
+        except ValueError:
+            print('Error!!! Please insert port number!!! Try again')
+        break
+    url = "http://" + container_ip  # + ":" + port
+    print(url)
+    py_html_test.test_response("url")
