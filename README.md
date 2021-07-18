@@ -1,4 +1,4 @@
-# Deploy docker alpine container with nginx to k8s
+# Minikube/K8s: Deploy and test unprivileged alpine-nginx container
 ## Tasks:
 1. Create Dockerfile that packages:
  * An index.html file that outputs current date and time using JavaScript.
