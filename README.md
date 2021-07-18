@@ -31,15 +31,14 @@
 * create and run container on k8s:
   * run k8s deployment: **kubectl apply -f deployment.yaml**
   * run k8s service: **kubectl apply -f service.yaml**
-  * run k8s service: **kubectl apply -f ingress.yaml**
-* open minikube dashboard to check the pod: 
-  * open new terminal and run this command: **minikube dashboard**
   * run in terminal: **kubectl get pods / && kubectl get svc**
+* open minikube dashboard to check the pod: 
+  * run in new terminal: **minikube dashboard**
 * test js application runnig:
   * with python script:**run test_container/main.py**
-  * OR with the following bash commands: 
-  * **ping -c3 172.17.0.2** (check yours using docker container inspect ContainerID | grep "IPAddress")
-  * **curl** http://172.17.0.2:8080
+  * OR with the following commands in terminal: 
+  * **minikube ip** 
+  * **curl** http://X.X.X.X:32001
 
 -----------------------------------------------------------
 ### SPECIAL THANKS: 
