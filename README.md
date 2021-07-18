@@ -13,15 +13,16 @@
 
 ## Prerequisites
 1. Docker engine
-* follow the installation instructions depending on OS [docker docs](https://docs.docker.com/engine/install/)
-3. Minikube
+* follow the installation instructions depending on your OS [docker docs](https://docs.docker.com/engine/install/)
+2. Minikube
 * use for testing [playground to learn Kubernetes](https://labs.play-with-k8s.com/)
 * OR install minikube
   * follow the installation instructions on [Install Minikube](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-minikube/)
-  * kubectl will be automaticaly configured
-  * minikube addons enable ingress
+3. Kubectl
+* verify kubectl is installed: **kubectl version --short**
+* if kubectl is not automaticaly configured, install kubectl depending on your OS [how to install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 4. Python 3.6
-* install python3.6 or later version, depending on OS
+* if not installed, install python3.6 or later version
 * install Python modules: **pip install requests datetime**
 
 -----------------------------------------------------------
