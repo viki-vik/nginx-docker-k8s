@@ -3,7 +3,7 @@
 1. Create Dockerfile that packages:
  * An index.html file that outputs current date and time using JavaScript.
  * Nginx web server that serves that file and nginx execution is the default process for the resulting Docker image.
- * The init process of the resulting container has to run as non-root user.
+ * The container has to run as unprivilege user.
 2. Prepare deployment code to deploy the image to K8s.
  * In K8s network the service should listen on port 80
 3. Create a test script that verifies that container works as expected:
