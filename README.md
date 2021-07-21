@@ -15,15 +15,14 @@
 1. Docker engine
 * follow the installation instructions depending on your OS [docker docs](https://docs.docker.com/engine/install/)
 2. Minikube
-* use for testing [playground to learn Kubernetes](https://labs.play-with-k8s.com/)
-* OR install minikube
+ * install minikube
   * follow the installation instructions on [Install Minikube](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-minikube/)
 3. Kubectl
-* verify kubectl is installed: **kubectl version --short**
-* if kubectl is not automaticaly configured, install kubectl depending on your OS [how to install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+ * verify kubectl is installed: **kubectl version --short**
+ * if kubectl is not automaticaly configured, install kubectl depending on your OS [how to install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 4. Python 3.6
-* if not installed, install python3.6 or later version
-* install Python modules: **pip install requests datetime**
+ * if not installed, install python3.6 or later version
+ * install Python modules: **pip install requests datetime**
 
 -----------------------------------------------------------
 ## How to use this project:
@@ -38,6 +37,5 @@
 * test js application runnig:
   * with python script:**run test_container/main.py**
   * OR with the following commands in terminal: 
-  * **minikube ip** 
-  * **curl** http://X.X.X.X:32001
+  * **curl `minikube service --url kube-js-svc`** 
 
