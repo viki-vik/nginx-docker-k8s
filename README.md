@@ -41,6 +41,3 @@
   * **minikube ip** 
   * **curl** http://X.X.X.X:32001
 
------------------------------------------------------------
-### SPECIAL THANKS: 
-Dockerfile for unprivileged user and shell scripts were taken from [here](https://github.com/nginxinc/docker-nginx-unprivileged/tree/main/stable/alpine)
