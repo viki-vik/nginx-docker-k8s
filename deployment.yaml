@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kube-vik-app
+  name: kube-js-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kube-vik-app
+      app: kube-js-app
   template:
     metadata:
       labels:
-        app: kube-vik-app
+        app: kube-js-app
     spec:
       containers:
-      - name: kube-vik-app
-        image: viki8/alpine_x_non-priv:1.0
+      - name: kube-js-app
+        image: viki8/ngnix-alpine-unp:1.02
         ports:
         - containerPort: 8080
           protocol: TCP
