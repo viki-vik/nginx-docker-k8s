@@ -37,5 +37,5 @@
 * test js application runnig:
   * with python script:**run test_container/main.py**
   * OR with the following commands in terminal: 
-  * **curl `minikube service --url kube-js-svc`** 
+  * **curl ``minikube service --url kube-js-svc``** 
 
