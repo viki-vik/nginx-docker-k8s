@@ -5,24 +5,25 @@
 #               what is getting returned is a date
 #               the returned date is correct
 # date:         14/07/21
-# version:      1.0
+# version:      1.3
 ########################################################
 
-import py_html_test
+import py_html_test as pht
+import os
+import subprocess as sp
+
 
 if __name__ == '__main__':
     while True:
         try:
-            container_ip = py_html_test.get_container_ip()
+            url = sp.getoutput('minikube service --url kube-js-svc')
+            print(f'Container running on {url}')
+            response_code = pht.get_http_response(url)
+            # pht.test_return_value(url, response_code)
+            response_data = pht.get_response_data(url, response_code)
+            js_date = pht.extract_date(response_data)
+            pht.check_date(js_date)
         except ValueError:
-            print('Error!!! Please insert Container IP in a valid format!!! Try again')
+            print('Error: check minikube is up and service is running')
         break
-    while True:
-        try:
-            port = str(py_html_test.get_port())
-        except ValueError:
-            print('Error!!! Please insert port number!!! Try again')
-        break
-    url = "http://" + container_ip  # + ":" + port
-    print(url)
-    py_html_test.test_response("url")
+
