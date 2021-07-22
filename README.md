@@ -35,7 +35,5 @@
 * open minikube dashboard to check the pod: 
   * run in new terminal: **minikube dashboard**
 * test js application runnig:
-  * with python script:**run test_container/main.py**
-  * OR with the following commands in terminal: 
-  * **minikube service --url kube-js-svc | xargs curl** 
+  * run in terminal:**python3 test_container/main.py** 
 
