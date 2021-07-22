@@ -9,7 +9,6 @@
 ########################################################
 
 import py_html_test as pht
-import os
 import subprocess as sp
 
 
