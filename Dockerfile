@@ -1,7 +1,11 @@
 FROM nginx:alpine
-LABEL vik v0.0.5
 
 ARG UID=101
+ARG GID=101
+
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY html/* /usr/share/nginx/html/
 
 # implement changes required to run NGINX as an unprivileged user
 RUN sed -i 's,listen       80;,listen       8080;,' /etc/nginx/conf.d/default.conf \
@@ -13,12 +17,9 @@ RUN sed -i 's,listen       80;,listen       8080;,' /etc/nginx/conf.d/default.co
     && chmod -R g+w /var/cache/nginx \
     && chown -R $UID:0 /etc/nginx \
     && chmod -R g+w /etc/nginx
-    
-COPY index.html /usr/share/nginx/html
-COPY script.js /usr/share/nginx/html
 
-EXPOSE 8080
+WORKDIR /usr/share/nginx/html
 
 USER $UID
 
-CMD ["nginx","-g","daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
