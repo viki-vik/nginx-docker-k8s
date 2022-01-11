@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kube-js-app
-        image: viki8/ngnix-alpine-unp:1.02
+        image: bevi13/nginx-alp-js:1.0
         ports:
         - containerPort: 8080
           protocol: TCP
